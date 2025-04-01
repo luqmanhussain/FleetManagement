@@ -1,0 +1,750 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+/*Hero*/
+.main {
+  background: url("img/truck2.jpeg") no-repeat center center/cover;
+  width: 100%;
+  height: 120vh;
+  position: relative;
+}
+
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.main > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Custom Navbar Styles */
+.navbar {
+  padding: 15px 0;
+}
+
+/* Navbar Brand (Logo) */
+.navbar-brand img {
+  max-height: 50px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff9800 !important;
+}
+
+/* Custom Button Styles */
+.btn-orange {
+  background-color: #ff9800;
+  color: white;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-orange:hover {
+  background-color: #e68900;
+}
+
+.btn-outline-orange {
+  border: 2px solid #ff9800;
+  color: #ff9800;
+  border-radius: 5px;
+  padding: 8px 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-outline-orange:hover {
+  background-color: #ff9800;
+  color: white;
+}
+.content {
+  padding: 10%;
+}
+
+/* Feature */
+.card-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.crd {
+  width: 270px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  gap: 16px;
+  padding: 26px;
+  background-color: #1b1717;
+  color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.crd h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.crd p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.crd-img {
+  width: 95px;
+  height: 95px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -47px;
+  left: 98px;
+}
+
+.crd-img img {
+  width: 70px;
+  height: 70px;
+}
+
+.box {
+  width: 63px;
+  height: 63px;
+  background-color: #fb8a00;
+  border-radius: 10px 13px 7px 0px;
+  position: absolute;
+  z-index: -1;
+  left: -18px;
+  bottom: -19px;
+}
+
+/* Works*/
+
+.icon {
+  font-size: 6rem;
+  color: #f57c00;
+}
+
+.card-custom {
+  border-radius: 0.5rem;
+  width: 508px;
+  height: 294px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  color: #007bff;
+  background: #d4d9ec;
+}
+
+.card-text {
+  font-size: 32px;
+}
+
+.card1 {
+  /*background-color: #FB8A00;*/
+  background: url("img/truck2.jpeg") no-repeat center center/cover;
+}
+
+/* Review */
+.mar {
+  margin-right: 190px;
+}
+
+.mar1 {
+  margin-right: 150px;
+}
+.mar2 {
+  margin-right: 130px;
+}
+.review-content {
+  color: black;
+}
+
+.review-card {
+  max-width: 350px;
+  margin-bottom: 20px; /* Added spacing between cards */
+}
+
+.btn1 {
+  border: 1px solid #e8ebef;
+  padding: 5px 5px 5px 5px;
+  color: #d3cccc;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-left: 325px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn1 .fas {
+  color: #b5cd85;
+  padding: 5px;
+}
+
+.btn2 {
+  border: 1px solid #e8ebef;
+  padding: 5px 5px 5px 5px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn2 .fas {
+  color: #b5cd85;
+  padding: 5px;
+}
+
+.buttons {
+  gap: 10px;
+}
+
+/* pricing */
+.pricing-li {
+  height: 300px;
+  font-size: 0.9rem;
+}
+
+.pricing-card {
+  height: 550px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.pricing-card .icon {
+  background-color: #ff7f50;
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.pricing-card .price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pricing-card .old-price {
+  font-size: 1.25rem;
+  text-decoration: line-through;
+  color: #6c757d;
+}
+.pricing-card .btn-trial {
+  background-color: #ff7f50;
+  color: white;
+  border-radius: 0.5rem;
+}
+.pricing-card-plus3 {
+  background: linear-gradient(to right, #ff7f50, #ff1493);
+  color: white;
+}
+.pricing-card .icon {
+  width: 50px;
+  text-align: center;
+}
+.pricing-card-plus3 .icon {
+  background-color: white;
+  color: #ff7f50;
+  font-size: 1.5rem;
+}
+.pricing-card-plus2 .icon {
+  font-size: 1.5rem;
+}
+
+.pricing-card-plus .btn-trial {
+  background-color: white;
+  color: #ff7f50;
+}
+.price-main-card {
+  height: 700px;
+}
+
+/*FAQs*/
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #091431;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+/* Cloneable Button */
+.cloneable-button {
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ff9800;
+  background: #f4f4fc;
+  border-radius: 15px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+}
+
+.cloneable-button:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/* Individual FAQ Boxes */
+.faq-item {
+  width: 48%;
+  min-height: 120px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  padding: 15px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* FAQ Question Box */
+.faq-question {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background: #ff9800;
+  color: #fff;
+}
+
+/* Expand/Collapse Icon */
+.faq-icon {
+  width: 25px;
+  height: 25px;
+  background: #ddd;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Active Icon State (Orange when expanded) */
+.faq-icon.active {
+  background: #ff9800;
+  color: white;
+}
+
+/* FAQ Answer Box */
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #555;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Full Width Layout */
+.faq-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+  .faq-item {
+    width: 100%;
+  }
+}
+
+.background-image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.chat-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  width: 100px;
+  height: 100px;
+}
+.chat-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+}
+
+/* Live Chat Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  background: url("img/web.png") no-repeat center center/cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  border-radius: 20px;
+  padding-left: 200px;
+  padding-top: 130px;
+  margin-bottom: 30px;
+}
+.banner-content {
+  color: black;
+  max-width: 350px;
+}
+.banner-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.banner-content p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+.chat-btn {
+  background: white;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60px;
+  transition: 0.3s ease;
+}
+.chat-btn:hover {
+  background: #ff9800;
+  color: white;
+}
+
+/*contact*/
+.contact-section {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  padding: 40px;
+}
+
+.form-container h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #f7941d;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.btn-custom {
+  background-color: #f7941d;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #f48323;
+}
+
+.contact-info i {
+  color: #f7941d;
+  margin-right: 10px;
+}
+
+.truck img {
+  display: block;
+  margin-left: 50px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.map-container {
+  background: url("img/truck1.jpeg") no-repeat center center/cover;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .map-container {
+    margin: 10px 0px;
+    height: 293px;
+    width: 100%;
+  }
+
+  .map-container img {
+    width: 83%;
+    height: 50vh;
+    transform: translateX(-13px);
+  }
+
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .banner {
+    height: 280px;
+    padding-left: 100px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    height: 149px;
+    padding-left: 1px;
+    padding-top: 50px;
+    text-align: center;
+    justify-content: center;
+  }
+  .banner-content {
+    position: relative;
+    top: -33px;
+    left: -4px;
+  }
+  .btn-orange{
+    margin-bottom: 7px;
+  }
+  .chat-btn {
+    height: 26px;
+    padding: 0px 9px;
+    bottom: 23px;
+  }
+  .banner-content h2 strong {
+    margin: -37px 12px;
+    font-size: 19px;
+  }
+  .banner-content p {
+    font-size: 14px;
+    position: relative;
+    top: -16px;
+  }
+
+  .contact-section {
+    border-radius: 0;
+  }
+  .form-container {
+    padding: 20px;
+  }
+  .map-container img {
+    width: 85%;
+    transform: translateX(-10px); /* Smaller shift for mobile */
+  }
+}
+
+/* Footer */
+
+.list-unstyled {
+  margin-top: 15px;
+}
+
+.list-unstyled li {
+  padding: 3px;
+}
+
+.contact {
+  display: inline-block;
+  color: white;
+  padding-bottom: 2px;
+}
+
+.footer {
+  background-color: #291d1d;
+  color: #fff;
+}
+
+.footer-bottom {
+  background-color: #fb8a00;
+  color: #000000;
+}
+
+.footer-bottom p {
+  display: flex;
+  align-items: center;
+}
+
+.footer-bottom a i {
+  color: #000000;
+  margin: 5px;
+}
+
+.img-fluid {
+  z-index: 5;
+  position: absolute;
+  margin-top: 5px;
+  right: 197px;
+}
+
+.rectangle {
+  background-color: #ffe600;
+  padding: 95px 5px;
+  border-radius: 11px;
+  z-index: 0;
+}
+
+.last-img {
+  height: 150px;
+  width: 180px;
+  margin-top: -90px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+#logo {
+  position: relative;
+  left: -1px;
+  top: -7;
+}
+
+/* media Queries */
+@media (max-width: 576px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    /* padding: 90px 10px; */
+    width: 90%;
+  }
+
+  .main {
+    height: 130vh;
+  }
+  .logo2 {
+    position: relative;
+    margin-left: 115px;
+  }
+  .pricing-card {
+    margin: 10px 0px;
+  }
+
+  .last-img {
+    height: 116px;
+    width: 118px;
+    margin-top: -28px;
+  }
+  .menu {
+    flex-direction: column;
+  }
+
+  .resp-1 img {
+    display: none;
+  }
+  #logo {
+    position: relative;
+    left: -104px;
+    top: 56px;
+    width: 96px;
+    font-size: 16px;
+  }
+
+  .crd {
+    margin-top: 43px;
+    width: 261px;
+    height: 292px;
+  }
+
+  .card-text {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 5rem;
+  }
+
+  .card-custom {
+    width: 336px;
+    height: 257px;
+  }
+
+  .footer-bottom {
+    padding: 19px;
+    margin: 140px auto;
+  }
+
+  .footer {
+    height: 200vh;
+  }
+  p{
+    font-size: 12px;
+  }
+}
