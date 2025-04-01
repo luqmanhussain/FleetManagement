@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+          /* Google Fonts - Poppins */
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+          }
+
+          body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(101, 101, 217);
+            padding: 20px;
+          }
+
+          /* Container for Forms */
+          .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            gap: 20px;
+          }
+
+          .logo{
+            margin: 5px auto;
+            width: 100px;
+            display: block;
+          }
+
+          /* Form Styling */
+          .form {
+            width: 50%;
+            padding: 20px;
+            border-radius: 6px;
+            background: #FFF;
+          }
+
+          .form-content {
+            text-align: center;
+          }
+
+          header {
+            font-size: 24px;
+            font-weight: 600;
+            color: #232836;
+            text-align: center;
+          }
+
+          .field {
+            position: relative;
+            height: 50px;
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 6px;
+          }
+
+          .field input,
+          .field button {
+            height: 100%;
+            width: 100%;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+          }
+
+          .field input {
+            outline: none;
+            padding: 0 15px;
+            border: 1px solid #CACACA;
+          }
+
+          .eye-icon {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #8b8b8b;
+            cursor: pointer;
+            padding: 5px;
+          }
+
+          .field button {
+            color: #fff;
+            background-color: #f7941d;
+            cursor: pointer;
+            transition: all 0.3s ease;
+          }
+
+          .field button:hover {
+            background-color: #e68317;
+          }
+
+          .form-link {
+            text-align: center;
+            margin-top: 10px;
+          }
+
+          .form-link span,
+          .form-link a {
+            font-size: 14px;
+            color: #232836;
+          }
+
+          .form a {
+            color: #f7941d;
+            text-decoration: none;
+          }
+
+          .form a:hover {
+            text-decoration: underline;
+          }
+
+          /* Divider Line */
+          .line {
+            height: 1px;
+            width: 100%;
+            margin: 20px 0;
+            background-color: #d4d4d4;
+            position: relative;
+          }
+
+          .line::before {
+            content: 'Or';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #FFF;
+            color: #8b8b8b;
+            padding: 0 15px;
+          }
+
+          /* Social Login Buttons */
+          .media-options {
+            text-align: center;
+            margin-top: 10px;
+          }
+
+          .media-options a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            height: 50px;
+            border-radius: 6px;
+            font-size: 14px;
+          }
+
+          a.facebook {
+            background-color: #f7941d;
+            color: #fff;
+          }
+
+          .facebook-icon {
+            background-color: #fff;
+            color: #e68317;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 50%;
+          }
+
+          a.google {
+            border: 1px solid #CACACA;
+            color: #232836;
+          }
+
+          img.google-img {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+          }
+
+          /* Image Styling */
+          .image-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+          }
+
+          /* Responsive Design */
+          @media screen and (max-width: 900px) {
+            .container {
+              flex-direction: column;
+              width: 100%;
+              padding: 15px;
+              text-align: center;
+            }
+
+            .form {
+              width: 100%;
+            }
+
+            .image-container {
+              order: -1; /* Moves image on top in mobile view */
+            }
+
+            .image-container img {
+              width: 100%;
+              max-width: 300px;
+              height: auto;
+            }
+          }
+
+          @media screen and (max-width: 576px) {
+            .form {
+              padding: 15px;
+            }
+            .logo {
+          padding-top: 75px;
+          margin: 22px auto;
+            }
+
+            .image-container img {
+             display: none;
+          }
+      }
+
+            .field input,
+            .field button {
+              font-size: 14px;
+            }
+          }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <!-- Signup Form -->
+      <div class="form signup">
+        <div>
+          <img src="./img/image.png" alt="" class="logo" />
+        </div>
+        <div class="form-content">
+          <header>Signup</header>
+          <form action="#">
+            <div class="field input-field">
+              <input type="email" placeholder="Email" class="input" />
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Create password"
+                class="password"
+              />
+            </div>
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Confirm password"
+                class="password"
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+            <div class="field button-field">
+              <button>Signup</button>
+            </div>
+          </form>
+          <div class="form-link">
+            <span
+              >Already have an account?
+              <a href="#" class="link login-link">Login</a></span
+            >
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="media-options">
+          <a href="#" class="field facebook">
+            <i class="bx bxl-facebook facebook-icon"></i>
+            <span>Signup with Facebook</span>
+          </a>
+        </div>
+        <div class="media-options">
+          <a href="#" class="field google">
+            <img src="img/google.png" alt="Google" class="google-img" />
+            <span>Signup with Google</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Image Section -->
+      <div class="image-container">
+        <img src="./img/truck3.jpeg" alt="Signup Image" />
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
