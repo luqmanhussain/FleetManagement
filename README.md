@@ -1,5 +1,5 @@
 
-# FleetManagementFrontend
+# FleetManagement
 
 A simple frontend demo for a fleet management website with a main page, login, and signup.
 
